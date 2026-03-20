@@ -35,10 +35,9 @@ int main(void)
     ring_buffer_t rb;
     rb_init(&rb);
 
-    printf("=== Producer / Consumer Demo ===\n\n");
+    printf("Producer/Consumer Demo\n");
     producer(&rb);
     printf("\nBuffer now holds %u item(s).\n", rb_count(&rb));
     consumer(&rb);
-    printf("\n================================\n");
     return 0;
 }
